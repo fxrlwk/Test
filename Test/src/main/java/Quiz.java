@@ -26,12 +26,71 @@ public class Quiz extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
+        buttonGroup3 = new javax.swing.ButtonGroup();
+        buttonGroup4 = new javax.swing.ButtonGroup();
+        buttonGroup5 = new javax.swing.ButtonGroup();
+        buttonGroup6 = new javax.swing.ButtonGroup();
+        buttonGroup7 = new javax.swing.ButtonGroup();
+        buttonGroup8 = new javax.swing.ButtonGroup();
+        buttonGroup9 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         option11 = new javax.swing.JRadioButton();
         option12 = new javax.swing.JRadioButton();
         option13 = new javax.swing.JRadioButton();
         option14 = new javax.swing.JRadioButton();
+        jLabel3 = new javax.swing.JLabel();
+        option21 = new javax.swing.JRadioButton();
+        option22 = new javax.swing.JRadioButton();
+        option23 = new javax.swing.JRadioButton();
+        option24 = new javax.swing.JRadioButton();
+        jLabel4 = new javax.swing.JLabel();
+        option31 = new javax.swing.JRadioButton();
+        option32 = new javax.swing.JRadioButton();
+        option33 = new javax.swing.JRadioButton();
+        option34 = new javax.swing.JRadioButton();
+        jLabel5 = new javax.swing.JLabel();
+        option41 = new javax.swing.JRadioButton();
+        option42 = new javax.swing.JRadioButton();
+        option43 = new javax.swing.JRadioButton();
+        option44 = new javax.swing.JRadioButton();
+        jLabel6 = new javax.swing.JLabel();
+        option51 = new javax.swing.JRadioButton();
+        option52 = new javax.swing.JRadioButton();
+        option53 = new javax.swing.JRadioButton();
+        option54 = new javax.swing.JRadioButton();
+        jLabel7 = new javax.swing.JLabel();
+        option61 = new javax.swing.JRadioButton();
+        option62 = new javax.swing.JRadioButton();
+        option63 = new javax.swing.JRadioButton();
+        option64 = new javax.swing.JRadioButton();
+        jLabel8 = new javax.swing.JLabel();
+        option71 = new javax.swing.JRadioButton();
+        option72 = new javax.swing.JRadioButton();
+        option73 = new javax.swing.JRadioButton();
+        option74 = new javax.swing.JRadioButton();
+        jLabel9 = new javax.swing.JLabel();
+        option81 = new javax.swing.JRadioButton();
+        option82 = new javax.swing.JRadioButton();
+        option83 = new javax.swing.JRadioButton();
+        option84 = new javax.swing.JRadioButton();
+        jLabel10 = new javax.swing.JLabel();
+        option91 = new javax.swing.JRadioButton();
+        option92 = new javax.swing.JRadioButton();
+        option93 = new javax.swing.JRadioButton();
+        option94 = new javax.swing.JRadioButton();
+        submit = new javax.swing.JButton();
+        answer1 = new javax.swing.JLabel();
+        answer2 = new javax.swing.JLabel();
+        answer3 = new javax.swing.JLabel();
+        answer4 = new javax.swing.JLabel();
+        answer5 = new javax.swing.JLabel();
+        answer6 = new javax.swing.JLabel();
+        answer7 = new javax.swing.JLabel();
+        answer8 = new javax.swing.JLabel();
+        answer9 = new javax.swing.JLabel();
+        marks = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 204, 255));
@@ -59,26 +118,261 @@ public class Quiz extends javax.swing.JFrame {
         buttonGroup1.add(option14);
         option14.setText("20000");
 
+        jLabel3.setText("2) Which animal's saliva contains a powerful anticoagulant, historically used for medical purposes?");
+
+        buttonGroup2.add(option21);
+        option21.setText("Leech");
+        option21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                option21ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup2.add(option22);
+        option22.setText("Mosquito");
+
+        buttonGroup2.add(option23);
+        option23.setText("Bat");
+
+        buttonGroup2.add(option24);
+        option24.setText("Tick");
+
+        jLabel4.setText("3) Which of the following is farthest from animal cells:");
+
+        buttonGroup3.add(option31);
+        option31.setText("Bacteria");
+
+        buttonGroup3.add(option32);
+        option32.setText("Virus");
+
+        buttonGroup3.add(option33);
+        option33.setText("Plant cells");
+
+        buttonGroup3.add(option34);
+        option34.setText("Fungi cells");
+
+        jLabel5.setText("4) What is the approximate age of the oldest known tree, named Methuselah, in California?");
+
+        buttonGroup4.add(option41);
+        option41.setText("200 years");
+
+        buttonGroup4.add(option42);
+        option42.setText("1200 years");
+
+        buttonGroup4.add(option43);
+        option43.setText("4800 years");
+
+        buttonGroup4.add(option44);
+        option44.setText("7900 years");
+
+        jLabel6.setText("5) Which of the following animals is known to have blue blood?");
+
+        buttonGroup5.add(option51);
+        option51.setText("Human");
+
+        buttonGroup5.add(option52);
+        option52.setText("Octopus");
+
+        buttonGroup5.add(option53);
+        option53.setText("Crocodile");
+
+        buttonGroup5.add(option54);
+        option54.setText("Kangaroo");
+
+        jLabel7.setText("6) What percentage of the human body’s cells are bacterial?");
+
+        buttonGroup6.add(option61);
+        option61.setText("10%");
+
+        buttonGroup6.add(option62);
+        option62.setText("75%");
+
+        buttonGroup6.add(option63);
+        option63.setText("50%");
+
+        buttonGroup6.add(option64);
+        option64.setText("90%");
+
+        jLabel8.setText("7) Which animal has the largest eyes in the animal kingdom?");
+
+        buttonGroup7.add(option71);
+        option71.setText("Elephant");
+
+        buttonGroup7.add(option72);
+        option72.setText("Owl");
+
+        buttonGroup7.add(option73);
+        option73.setText("Whale");
+
+        buttonGroup7.add(option74);
+        option74.setText("Giant Squid");
+
+        jLabel9.setText("8) What color is the blood of a horseshoe crab?");
+
+        buttonGroup8.add(option81);
+        option81.setText("Red");
+
+        buttonGroup8.add(option82);
+        option82.setText("Green");
+
+        buttonGroup8.add(option83);
+        option83.setText("Blue");
+
+        buttonGroup8.add(option84);
+        option84.setText("Purple");
+
+        jLabel10.setText("9) Which plant is known for producing the deadly poison ricin?");
+
+        buttonGroup9.add(option91);
+        option91.setText("Castor Bean Plant");
+
+        buttonGroup9.add(option92);
+        option92.setText("Belladonna");
+
+        buttonGroup9.add(option93);
+        option93.setText("Poison Ivy");
+        option93.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                option93ActionPerformed(evt);
+            }
+        });
+
+        buttonGroup9.add(option94);
+        option94.setText("Foxglove");
+
+        submit.setText("Submit");
+        submit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submitActionPerformed(evt);
+            }
+        });
+
+        marks.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        marks.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(179, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(165, 165, 165))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(option13)
-                        .addGap(18, 18, 18)
-                        .addComponent(option14))
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(option13)
+                                .addGap(18, 18, 18)
+                                .addComponent(option14)
+                                .addGap(18, 18, 18)
+                                .addComponent(answer1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(option11)
+                                .addGap(18, 18, 18)
+                                .addComponent(option12))
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(option31)
+                                    .addComponent(option33))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(option34)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(answer3))
+                                    .addComponent(option32)))
+                            .addComponent(jLabel5)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(option43)
+                                    .addComponent(option41))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(option42)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(option44)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(answer4))))
+                            .addComponent(jLabel6)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(submit)
+                                .addComponent(jLabel4))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(option53)
+                                    .addComponent(option51))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(option52)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(option54)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(answer5))))
+                            .addComponent(jLabel7)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(option61)
+                                .addGap(18, 18, 18)
+                                .addComponent(option62))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(option63)
+                                .addGap(18, 18, 18)
+                                .addComponent(option64)
+                                .addGap(18, 18, 18)
+                                .addComponent(answer6))
+                            .addComponent(jLabel8)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(option71)
+                                    .addComponent(option73))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(option74)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(answer7))
+                                    .addComponent(option72)))
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(option83)
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(option82)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(option84)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(answer8))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(option91)
+                                    .addComponent(option93))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(option92)
+                                        .addGap(0, 0, Short.MAX_VALUE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(option94)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(answer9)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(marks))))
+                            .addComponent(option81)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(option21)
+                                    .addComponent(option23))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(option24)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(answer2))
+                                    .addComponent(option22)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(option11)
-                        .addGap(18, 18, 18)
-                        .addComponent(option12))
-                    .addComponent(jLabel2))
+                        .addGap(156, 156, 156)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -95,8 +389,100 @@ public class Quiz extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(option13)
-                    .addComponent(option14))
-                .addContainerGap(430, Short.MAX_VALUE))
+                    .addComponent(option14)
+                    .addComponent(answer1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option21)
+                    .addComponent(option22))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option24)
+                    .addComponent(option23)
+                    .addComponent(answer2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option31)
+                    .addComponent(option32))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option33)
+                    .addComponent(option34)
+                    .addComponent(answer3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option41)
+                    .addComponent(option42))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option43)
+                    .addComponent(option44)
+                    .addComponent(answer4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option51)
+                    .addComponent(option52))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option53)
+                    .addComponent(option54)
+                    .addComponent(answer5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option61)
+                    .addComponent(option62))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option63)
+                    .addComponent(option64)
+                    .addComponent(answer6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option71)
+                    .addComponent(option72))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option73)
+                    .addComponent(option74)
+                    .addComponent(answer7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option81)
+                    .addComponent(option82))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option83)
+                    .addComponent(option84)
+                    .addComponent(answer8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option91)
+                    .addComponent(option92))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(option93)
+                    .addComponent(option94)
+                    .addComponent(answer9)
+                    .addComponent(marks))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(submit)
+                .addContainerGap())
         );
 
         pack();
@@ -106,8 +492,55 @@ public class Quiz extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_option11ActionPerformed
 
-    //Code for the correct answer question 1
-    
+    private void option21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_option21ActionPerformed
+
+    private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
+        // TODO add your handling code here:
+        String answer11 = "";
+        if(option11.isSelected())
+        {
+            answer11 = "Close! Try again!";
+        }
+        if(option12.isSelected())
+        {
+            answer11 = "Good try!";
+        }
+        if(option13.isSelected())
+        {
+            answer11 = "Correct!";
+        }
+        if(option14.isSelected())
+        {
+            answer11 = "Not really! Better luck next time!";
+        }
+        answer1.setText(answer11);
+        String answer22 = "";
+        if(option21.isSelected())
+        {
+            answer22 = "Correct!";
+        }
+        if(option22.isSelected())
+        {
+            answer22 = "Good try! But incorrect";
+        }
+        if(option23.isSelected())
+        {
+            answer22 = "Try again!";
+        }
+        if(option24.isSelected())
+        {
+            answer22 = "Not really! Better luck next time!";
+        }
+        answer2.setText(answer22);
+
+    }//GEN-LAST:event_submitActionPerformed
+
+    private void option93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_option93ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_option93ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -144,12 +577,71 @@ public class Quiz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel answer1;
+    private javax.swing.JLabel answer2;
+    private javax.swing.JLabel answer3;
+    private javax.swing.JLabel answer4;
+    private javax.swing.JLabel answer5;
+    private javax.swing.JLabel answer6;
+    private javax.swing.JLabel answer7;
+    private javax.swing.JLabel answer8;
+    private javax.swing.JLabel answer9;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.ButtonGroup buttonGroup3;
+    private javax.swing.ButtonGroup buttonGroup4;
+    private javax.swing.ButtonGroup buttonGroup5;
+    private javax.swing.ButtonGroup buttonGroup6;
+    private javax.swing.ButtonGroup buttonGroup7;
+    private javax.swing.ButtonGroup buttonGroup8;
+    private javax.swing.ButtonGroup buttonGroup9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel marks;
     private javax.swing.JRadioButton option11;
     private javax.swing.JRadioButton option12;
     private javax.swing.JRadioButton option13;
     private javax.swing.JRadioButton option14;
+    private javax.swing.JRadioButton option21;
+    private javax.swing.JRadioButton option22;
+    private javax.swing.JRadioButton option23;
+    private javax.swing.JRadioButton option24;
+    private javax.swing.JRadioButton option31;
+    private javax.swing.JRadioButton option32;
+    private javax.swing.JRadioButton option33;
+    private javax.swing.JRadioButton option34;
+    private javax.swing.JRadioButton option41;
+    private javax.swing.JRadioButton option42;
+    private javax.swing.JRadioButton option43;
+    private javax.swing.JRadioButton option44;
+    private javax.swing.JRadioButton option51;
+    private javax.swing.JRadioButton option52;
+    private javax.swing.JRadioButton option53;
+    private javax.swing.JRadioButton option54;
+    private javax.swing.JRadioButton option61;
+    private javax.swing.JRadioButton option62;
+    private javax.swing.JRadioButton option63;
+    private javax.swing.JRadioButton option64;
+    private javax.swing.JRadioButton option71;
+    private javax.swing.JRadioButton option72;
+    private javax.swing.JRadioButton option73;
+    private javax.swing.JRadioButton option74;
+    private javax.swing.JRadioButton option81;
+    private javax.swing.JRadioButton option82;
+    private javax.swing.JRadioButton option83;
+    private javax.swing.JRadioButton option84;
+    private javax.swing.JRadioButton option91;
+    private javax.swing.JRadioButton option92;
+    private javax.swing.JRadioButton option93;
+    private javax.swing.JRadioButton option94;
+    private javax.swing.JButton submit;
     // End of variables declaration//GEN-END:variables
 }
