@@ -7,13 +7,18 @@
  *
  * @author majun4623
  */
+
+import java.awt.Color;
 public class Quiz extends javax.swing.JFrame {
 
+    private final Color DARK_GREEN = new Color(0, 100, 0);
+    private final Color LIGHT_YELLOW = new Color(255, 255, 153);
     /**
      * Creates new form Quiz
      */
     public Quiz() {
         initComponents();
+        getContentPane().setBackground(LIGHT_YELLOW);
     }
 
     /**
@@ -81,7 +86,6 @@ public class Quiz extends javax.swing.JFrame {
         option93 = new javax.swing.JRadioButton();
         option94 = new javax.swing.JRadioButton();
         submit = new javax.swing.JButton();
-        answer1 = new javax.swing.JLabel();
         answer2 = new javax.swing.JLabel();
         answer3 = new javax.swing.JLabel();
         answer4 = new javax.swing.JLabel();
@@ -91,15 +95,19 @@ public class Quiz extends javax.swing.JFrame {
         answer8 = new javax.swing.JLabel();
         answer9 = new javax.swing.JLabel();
         marks = new javax.swing.JLabel();
+        answer1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(204, 204, 255));
+        setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("The Biology Brainiac");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 11, 477, -1));
 
         jLabel2.setText("1) How many teeth do garden snails have?");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 47, -1, -1));
 
         buttonGroup1.add(option11);
         option11.setText("16000");
@@ -108,17 +116,22 @@ public class Quiz extends javax.swing.JFrame {
                 option11ActionPerformed(evt);
             }
         });
+        getContentPane().add(option11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, -1, -1));
 
         buttonGroup1.add(option12);
         option12.setText("10000");
+        getContentPane().add(option12, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 63, -1, -1));
 
         buttonGroup1.add(option13);
         option13.setText("14000");
+        getContentPane().add(option13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 86, -1, -1));
 
         buttonGroup1.add(option14);
         option14.setText("20000");
+        getContentPane().add(option14, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 86, -1, -1));
 
         jLabel3.setText("2) Which animal's saliva contains a powerful anticoagulant, historically used for medical purposes?");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 111, -1, -1));
 
         buttonGroup2.add(option21);
         option21.setText("Leech");
@@ -127,107 +140,144 @@ public class Quiz extends javax.swing.JFrame {
                 option21ActionPerformed(evt);
             }
         });
+        getContentPane().add(option21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 127, -1, -1));
 
         buttonGroup2.add(option22);
         option22.setText("Mosquito");
+        getContentPane().add(option22, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 127, -1, -1));
 
         buttonGroup2.add(option23);
         option23.setText("Bat");
+        getContentPane().add(option23, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
 
         buttonGroup2.add(option24);
         option24.setText("Tick");
+        getContentPane().add(option24, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 150, -1, -1));
 
         jLabel4.setText("3) Which of the following is farthest from animal cells:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 175, -1, -1));
 
         buttonGroup3.add(option31);
         option31.setText("Bacteria");
+        getContentPane().add(option31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 191, -1, -1));
 
         buttonGroup3.add(option32);
         option32.setText("Virus");
+        getContentPane().add(option32, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 191, -1, -1));
 
         buttonGroup3.add(option33);
         option33.setText("Plant cells");
+        getContentPane().add(option33, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 214, -1, -1));
 
         buttonGroup3.add(option34);
         option34.setText("Fungi cells");
+        getContentPane().add(option34, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 214, -1, -1));
 
         jLabel5.setText("4) What is the approximate age of the oldest known tree, named Methuselah, in California?");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 239, -1, -1));
 
         buttonGroup4.add(option41);
-        option41.setText("200 years");
+        option41.setText("3500 years");
+        getContentPane().add(option41, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 255, -1, -1));
 
         buttonGroup4.add(option42);
         option42.setText("1200 years");
+        getContentPane().add(option42, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 255, -1, -1));
 
         buttonGroup4.add(option43);
         option43.setText("4800 years");
+        getContentPane().add(option43, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 278, -1, -1));
 
         buttonGroup4.add(option44);
         option44.setText("7900 years");
+        getContentPane().add(option44, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 278, -1, -1));
 
         jLabel6.setText("5) Which of the following animals is known to have blue blood?");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 303, -1, -1));
 
         buttonGroup5.add(option51);
         option51.setText("Human");
+        getContentPane().add(option51, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 319, -1, -1));
 
         buttonGroup5.add(option52);
         option52.setText("Octopus");
+        getContentPane().add(option52, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 319, -1, -1));
 
         buttonGroup5.add(option53);
         option53.setText("Crocodile");
+        getContentPane().add(option53, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 344, -1, -1));
 
         buttonGroup5.add(option54);
         option54.setText("Kangaroo");
+        getContentPane().add(option54, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 344, -1, -1));
 
         jLabel7.setText("6) What percentage of the human body’s cells are bacterial?");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 369, -1, -1));
 
         buttonGroup6.add(option61);
         option61.setText("10%");
+        getContentPane().add(option61, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 385, -1, -1));
 
         buttonGroup6.add(option62);
         option62.setText("75%");
+        getContentPane().add(option62, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 385, -1, -1));
 
         buttonGroup6.add(option63);
         option63.setText("50%");
+        getContentPane().add(option63, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, -1, -1));
 
         buttonGroup6.add(option64);
         option64.setText("90%");
+        getContentPane().add(option64, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 410, -1, -1));
 
         jLabel8.setText("7) Which animal has the largest eyes in the animal kingdom?");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 435, -1, -1));
 
         buttonGroup7.add(option71);
         option71.setText("Elephant");
+        getContentPane().add(option71, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 451, -1, -1));
 
         buttonGroup7.add(option72);
         option72.setText("Owl");
+        getContentPane().add(option72, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 451, -1, -1));
 
         buttonGroup7.add(option73);
         option73.setText("Whale");
+        getContentPane().add(option73, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 476, -1, -1));
 
         buttonGroup7.add(option74);
         option74.setText("Giant Squid");
+        getContentPane().add(option74, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 476, -1, -1));
 
         jLabel9.setText("8) What color is the blood of a horseshoe crab?");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 501, -1, -1));
 
         buttonGroup8.add(option81);
         option81.setText("Red");
+        getContentPane().add(option81, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 517, -1, -1));
 
         buttonGroup8.add(option82);
         option82.setText("Green");
+        getContentPane().add(option82, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 517, -1, -1));
 
         buttonGroup8.add(option83);
         option83.setText("Blue");
+        getContentPane().add(option83, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 542, -1, -1));
 
         buttonGroup8.add(option84);
         option84.setText("Purple");
+        getContentPane().add(option84, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 542, -1, -1));
 
         jLabel10.setText("9) Which plant is known for producing the deadly poison ricin?");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 567, -1, -1));
 
         buttonGroup9.add(option91);
         option91.setText("Castor Bean Plant");
+        getContentPane().add(option91, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 583, -1, -1));
 
         buttonGroup9.add(option92);
         option92.setText("Belladonna");
+        getContentPane().add(option92, new org.netbeans.lib.awtextra.AbsoluteConstraints(139, 583, -1, -1));
 
         buttonGroup9.add(option93);
         option93.setText("Poison Ivy");
@@ -236,9 +286,11 @@ public class Quiz extends javax.swing.JFrame {
                 option93ActionPerformed(evt);
             }
         });
+        getContentPane().add(option93, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 608, -1, -1));
 
         buttonGroup9.add(option94);
         option94.setText("Foxglove");
+        getContentPane().add(option94, new org.netbeans.lib.awtextra.AbsoluteConstraints(139, 608, -1, -1));
 
         submit.setText("Submit");
         submit.addActionListener(new java.awt.event.ActionListener() {
@@ -246,244 +298,20 @@ public class Quiz extends javax.swing.JFrame {
                 submitActionPerformed(evt);
             }
         });
+        getContentPane().add(submit, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 645, -1, -1));
+        getContentPane().add(answer2, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 154, -1, -1));
+        getContentPane().add(answer3, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 218, -1, -1));
+        getContentPane().add(answer4, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 282, -1, -1));
+        getContentPane().add(answer5, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 344, -1, -1));
+        getContentPane().add(answer6, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 410, -1, -1));
+        getContentPane().add(answer7, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 476, -1, -1));
+        getContentPane().add(answer8, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 542, -1, -1));
+        getContentPane().add(answer9, new org.netbeans.lib.awtextra.AbsoluteConstraints(314, 608, -1, -1));
 
         marks.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         marks.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(option13)
-                                .addGap(18, 18, 18)
-                                .addComponent(option14)
-                                .addGap(18, 18, 18)
-                                .addComponent(answer1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(option11)
-                                .addGap(18, 18, 18)
-                                .addComponent(option12))
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(option31)
-                                    .addComponent(option33))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(option34)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(answer3))
-                                    .addComponent(option32)))
-                            .addComponent(jLabel5)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(option43)
-                                    .addComponent(option41))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(option42)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(option44)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(answer4))))
-                            .addComponent(jLabel6)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(submit)
-                                .addComponent(jLabel4))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(option53)
-                                    .addComponent(option51))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(option52)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(option54)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(answer5))))
-                            .addComponent(jLabel7)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(option61)
-                                .addGap(18, 18, 18)
-                                .addComponent(option62))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(option63)
-                                .addGap(18, 18, 18)
-                                .addComponent(option64)
-                                .addGap(18, 18, 18)
-                                .addComponent(answer6))
-                            .addComponent(jLabel8)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(option71)
-                                    .addComponent(option73))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(option74)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(answer7))
-                                    .addComponent(option72)))
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel10)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(option83)
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(option82)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(option84)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(answer8))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(option91)
-                                    .addComponent(option93))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(option92)
-                                        .addGap(0, 0, Short.MAX_VALUE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(option94)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(answer9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(marks))))
-                            .addComponent(option81)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(option21)
-                                    .addComponent(option23))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(option24)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(answer2))
-                                    .addComponent(option22)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(156, 156, 156)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option11)
-                    .addComponent(option12))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option13)
-                    .addComponent(option14)
-                    .addComponent(answer1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option21)
-                    .addComponent(option22))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option24)
-                    .addComponent(option23)
-                    .addComponent(answer2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option31)
-                    .addComponent(option32))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option33)
-                    .addComponent(option34)
-                    .addComponent(answer3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option41)
-                    .addComponent(option42))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option43)
-                    .addComponent(option44)
-                    .addComponent(answer4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option51)
-                    .addComponent(option52))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option53)
-                    .addComponent(option54)
-                    .addComponent(answer5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option61)
-                    .addComponent(option62))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option63)
-                    .addComponent(option64)
-                    .addComponent(answer6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option71)
-                    .addComponent(option72))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option73)
-                    .addComponent(option74)
-                    .addComponent(answer7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option81)
-                    .addComponent(option82))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option83)
-                    .addComponent(option84)
-                    .addComponent(answer8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option91)
-                    .addComponent(option92))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option93)
-                    .addComponent(option94)
-                    .addComponent(answer9)
-                    .addComponent(marks))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(submit)
-                .addContainerGap())
-        );
+        getContentPane().add(marks, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 645, -1, -1));
+        getContentPane().add(answer1, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 90, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -498,42 +326,274 @@ public class Quiz extends javax.swing.JFrame {
 
     private void submitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitActionPerformed
         // TODO add your handling code here:
+        //1st question
         String answer11 = "";
+        double m = 0;
         if(option11.isSelected())
         {
             answer11 = "Close! Try again!";
+            answer1.setForeground(Color.RED);
         }
-        if(option12.isSelected())
+        else if(option12.isSelected())
         {
-            answer11 = "Good try!";
+            answer11 = "Good try but incorrect!";
+            answer1.setForeground(Color.RED);
         }
-        if(option13.isSelected())
+        else if(option13.isSelected())
         {
             answer11 = "Correct!";
+            m++;
+            answer1.setForeground(DARK_GREEN);
         }
-        if(option14.isSelected())
+        else if(option14.isSelected())
         {
-            answer11 = "Not really! Better luck next time!";
+            answer11 = "Not really, better luck next time!";
+            answer1.setForeground(Color.RED);
         }
         answer1.setText(answer11);
+        
+        //2nd question
         String answer22 = "";
         if(option21.isSelected())
         {
             answer22 = "Correct!";
+            m++;
+            answer2.setForeground(DARK_GREEN);
         }
-        if(option22.isSelected())
+        else if(option22.isSelected())
         {
-            answer22 = "Good try! But incorrect";
+            answer22 = "Good try but incorrect!";
+            answer2.setForeground(Color.RED);
         }
-        if(option23.isSelected())
+        else if(option23.isSelected())
         {
-            answer22 = "Try again!";
+            answer22 = "Incorrect! Try again!";
+            answer2.setForeground(Color.RED);
         }
-        if(option24.isSelected())
+        else if(option24.isSelected())
         {
-            answer22 = "Not really! Better luck next time!";
+            answer22 = "Not really, better luck next time!";
+            answer2.setForeground(Color.RED);
         }
         answer2.setText(answer22);
+        
+        //3rd question
+        String answer33 = "";
+        if(option31.isSelected())
+        {
+            answer33 = "Incorrect! Try again!";
+            answer3.setForeground(Color.RED);
+        }
+        else if(option32.isSelected())
+        {
+            answer33 = "Correct!";
+            m++;
+            answer3.setForeground(DARK_GREEN);
+        }
+        else if(option33.isSelected())
+        {
+            answer33 = "Good try but incorrect!";
+            answer3.setForeground(Color.RED);
+        }
+        else if(option34.isSelected())
+        {
+            answer33 = "Not really, better luck next time!";
+            answer3.setForeground(Color.RED);
+        }
+        answer3.setText(answer33);
+        
+        //4th question
+        String answer44 = "";
+        if(option41.isSelected())
+        {
+            answer44 = "Incorrect! Try again!";
+            answer4.setForeground(Color.RED);
+        }
+        else if(option42.isSelected())
+        {
+            answer44 = "Close! Try again!";
+            answer4.setForeground(Color.RED);
+        }
+        else if(option43.isSelected())
+        {
+            answer44 = "Correct!";
+            m++;
+            answer4.setForeground(DARK_GREEN);
+        }
+        else if(option44.isSelected())
+        {
+            answer44 = "Good try but incorrect!";
+            answer4.setForeground(Color.RED);
+        }
+        answer4.setText(answer44);
+        
+        //5th question
+        String answer55 = "";
+        if(option51.isSelected())
+        {
+            answer55 = "Incorrect! Try again!";
+            answer5.setForeground(Color.RED);
+        }
+        else if(option52.isSelected())
+        {
+            answer55 = "Correct!";
+            m++;
+            answer5.setForeground(DARK_GREEN);
+        }
+        else if(option53.isSelected())
+        {
+            answer55 = "Good try but incorrect!";
+            answer5.setForeground(Color.RED);
+        }
+        else if(option54.isSelected())
+        {
+            answer55 = "Nope, better luck next time!";
+            answer5.setForeground(Color.RED);
+        }
+        answer5.setText(answer55);
+        
+        //1st question
+        String answer66 = "";
+        if(option61.isSelected())
+        {
+            answer66 = "Good try but incorrect!";
+            answer6.setForeground(Color.RED);
+        }
+        else if(option62.isSelected())
+        {
+            answer66 = "Close! Try again!";
+            answer6.setForeground(Color.RED);
+        }
+        else if(option63.isSelected())
+        {
+            answer66 = "Correct!";
+            m++;
+            answer6.setForeground(DARK_GREEN);
+        }
+        else if(option64.isSelected())
+        {
+            answer66 = "Not really, better luck next time!";
+            answer6.setForeground(Color.RED);
+        }
+        answer6.setText(answer66);
+        
+        //7th question
+        String answer77 = "";
+        if(option71.isSelected())
+        {
+            answer77 = "Incorrect! Try again!";
+            answer7.setForeground(Color.RED);
+        }
+        else if(option72.isSelected())
+        {
+            answer77 = "Nope, better luck next time!";
+            answer7.setForeground(Color.RED);
+        }
+        else if(option73.isSelected())
+        {
+            answer77 = "Good try but incorrect!";
+            answer7.setForeground(Color.RED);
+        }
+        else if(option74.isSelected())
+        {
+            answer77 = "Correct!";
+            m++;
+            answer7.setForeground(DARK_GREEN);
+        }
+        answer7.setText(answer77);
+        
+        //8th question
+        String answer88 = "";
+        if(option81.isSelected())
+        {
+            answer88 = "Nope, better luck next time!";
+            answer8.setForeground(Color.RED);
+        }
+        else if(option82.isSelected())
+        {
+            answer88 = "Incorrect! Try again!";
+            answer8.setForeground(Color.RED);
+        }
+        else if(option83.isSelected())
+        {
+            answer88 = "Correct!";
+            m++;
+            answer8.setForeground(DARK_GREEN);
+        }
+        else if(option84.isSelected())
+        {
+            answer88 = "Good try but incorrect!";
+            answer8.setForeground(Color.RED);
+        }
+        answer8.setText(answer88);
+        
+        //9th question
+        String answer99 = "";
+        if(option91.isSelected())
+        {
+            answer99 = "Correct!";
+            m++;
+            answer9.setForeground(DARK_GREEN);
+        }
+        else if(option92.isSelected())
+        {
+            answer99 = "Incorrect! Try again!";
+            answer9.setForeground(Color.RED);
+        }
+        else if(option93.isSelected())
+        {
+            answer99 = "Nope, better luck next time!";
+            answer9.setForeground(Color.RED);
+        }
+        else if(option94.isSelected())
+        {
+            answer99 = "Good try but incorrect!";
+            answer9.setForeground(Color.RED);
+        }
+        answer9.setText(answer99);
+        
+        //marks
+        int grade = (int)((m/9) * 100);
+        marks.setText(String.valueOf(grade + "%"));
+        
+        //Disabeling radio buttons and submit button
+        option11.setEnabled(false);
+        option12.setEnabled(false);
+        option13.setEnabled(false);
+        option14.setEnabled(false);
+        option21.setEnabled(false);
+        option22.setEnabled(false);
+        option23.setEnabled(false);
+        option24.setEnabled(false);
+        option31.setEnabled(false);
+        option32.setEnabled(false);
+        option33.setEnabled(false);
+        option34.setEnabled(false);
+        option41.setEnabled(false);
+        option42.setEnabled(false);
+        option43.setEnabled(false);
+        option44.setEnabled(false);
+        option51.setEnabled(false);
+        option52.setEnabled(false);
+        option53.setEnabled(false);
+        option54.setEnabled(false);
+        option61.setEnabled(false);
+        option62.setEnabled(false);
+        option63.setEnabled(false);
+        option64.setEnabled(false);
+        option71.setEnabled(false);
+        option72.setEnabled(false);
+        option73.setEnabled(false);
+        option74.setEnabled(false);
+        option81.setEnabled(false);
+        option82.setEnabled(false);
+        option83.setEnabled(false);
+        option84.setEnabled(false);
+        option91.setEnabled(false);
+        option92.setEnabled(false);
+        option93.setEnabled(false);
+        option94.setEnabled(false);
+        submit.setEnabled(false);
 
     }//GEN-LAST:event_submitActionPerformed
 
